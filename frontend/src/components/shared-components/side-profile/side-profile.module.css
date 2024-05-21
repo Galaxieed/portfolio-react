@@ -1,0 +1,35 @@
+.sideProfile{
+    border-radius: 35px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #01597175 ;
+}
+
+.sideProfile > img {
+    border: 10px outset white;
+    border-radius: 50%;
+}
+
+.sideProfile > hr {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px
+}
+
+.sideProfile > button {
+    padding: 10px 20px;
+    border-radius: 35px;
+    color: #015971;
+    font-weight: 500;
+}
+
+.socials {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
