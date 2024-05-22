@@ -23,25 +23,47 @@ section {
   height: 100%;
 }
 
-/* Define your CSS animations */
-.fade-enter {
-  opacity: 0;
-  transform: scale(0.9);
+/* Define the keyframes for the upward fade animation */
+@keyframes upwardFade {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
-.fade-enter-active {
-  opacity: 1;
-  transform: scale(1);
-  transition: opacity 300ms, transform 300ms;
+/* Define the keyframes for the upward fade animation */
+@keyframes upwardFadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
 }
 
-.fade-exit {
-  opacity: 1;
-  transform: scale(1);
+@keyframes upwardFadeOut {
+  0% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  100% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
 }
 
-.fade-exit-active {
-  opacity: 0;
-  transform: scale(0.9);
-  transition: opacity 300ms, transform 300ms;
+/* Apply the animation to the entering element */
+.upward-fade-enter {
+  animation: upwardFadeIn 0.5s ease-out forwards;
+}
+
+/* Apply the animation to the exiting element */
+.upward-fade-exit {
+  animation: upwardFadeOut 0.5s ease-out forwards;
 }

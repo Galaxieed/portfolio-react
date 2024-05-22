@@ -40,7 +40,9 @@
 }
 
 .active {
-    border: 1px solid rgba(0, 0, 0, 1);
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(0, 0, 0);
+    border-style: outset;
     border-radius: 70px;
 }
 
